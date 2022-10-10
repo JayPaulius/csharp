@@ -1,11 +1,12 @@
-﻿Console.WriteLine("Введите трехзначное число:");
+﻿Console.WriteLine("Введите число:");
 int a = int.Parse(Console.ReadLine());
 int b = 0;
 
-if (a < 100)
-    Console.WriteLine("третьей цифры нет");
-else
+while (a > 1000)
 {
-    b = a % 1000 / 100;
-    Console.WriteLine(b);
+    a = a / 10;
 }
+
+a = a % 10;
+
+Console.WriteLine(a);
